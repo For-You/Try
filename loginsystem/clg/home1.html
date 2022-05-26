@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="welcome to extra ordinary hotel in india">
+    <meta name="keywords" content="hotel,luxury,India">
+    
+    <script src="https://kit.fontawesome.com/d79e4717f3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b1b425ded7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>Study Hub</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7em;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+h1,h2,h3{
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px 0px;
+}
+/* utility classes */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 40px;
+}
+
+/* padding */
+.py-1 { padding: 10px 0;}
+.py-2 { padding: 20px 0;}
+.py-3 { padding: 30px 0;}
+
+/* Navbar */
+#navbar{
+    background-color:#333;
+    color: white;
+    overflow: auto;
+}
+
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar  h1{
+    float: left;
+    padding: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;   
+
+}
+
+#navbar ul li {
+    float: left;
+}
+input.btn.btn-primary {
+    height: 30px;
+    width: 60px;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+#navbar ul a{
+    display: block;
+    padding: 14px;
+    text-align: center;
+}
+
+#navbar ul li a:hover ,
+#navbar ul li a.current {
+    background-color: #444;
+    color: #f7c08a;
+    
+}
+
+/* About-info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* testimonials */
+#testimonials {
+    height: 600px;
+    background: url('bg-test.jpg') no-repeat center center/cover;
+    padding-top: 40px;
+}
+
+#testimonials .testimonial h2 {
+    color: #fff;
+    text-align: center;
+    margin-left: 50px;
+   
+}
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+#main-container{
+    background-image: url("ash.jpg") ;
+    height: 500px; 
+    overflow-y: scroll;
+  
+
+}
+#cont1{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    justify-content: center;
+}
+#m1{
+    text-align: center;
+    height: 50px;
+}
+.mm{
+
+    height: 30px;
+    
+}
+
+
+/* Main-footer */
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #f7c08a;
+    color: #333;
+    
+}
+.btn-primary{
+    text-align: center;
+} 
+@media(max-width:850px){
+
+    #cont1{
+        flex-direction: column;
+       margin-top: 0; 
+     
+       
+    }
+}
+#who {
+    display: flex;
+}
+#who div {
+    flex:1;
+}
+#who .who-img{
+    background:black    ;
+    
+
+}
+#who .who-content{
+    color: white;
+    background-color: #333;
+    padding: 1em;
+
+}
+#who .who-content li{
+    padding: 1rem;
+    text-decoration: none;
+}
+.m-heading{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-spacing: 7px;
+}
+.list{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-items: center;
+    
+}
+.primary{
+    color: orange;
+}
+.pa{
+    height: 10px;
+    font-size: 20px; 
+   
+}
+
+
+
+
+</style>
+<script type="text/javascript">
+    function hello(){
+        var mm=document.getElementById('mm');
+        var yy=document.getElementById('yy');
+        var zz=document.getElementById('zz');
+        
+       
+if(mm.value=="FIRST" && zz.value=="FIRST_SEM" && yy.value=="CSE" )
+{
+    window.open("11.html");
+}
+if(mm.value=="FIRST" && zz.value=="SECOND_SEM" && yy.value=="CSE")
+{
+    window.open("12.html");
+}
+if(mm.value=="SECOND" && zz.value=="FIRST_SEM" && yy.value=="CSE")
+{
+    window.open("21.html");
+}
+if(mm.value=="SECOND" && zz.value=="SECOND_SEM" && yy.value=="CSE")
+{
+    window.open("22.html");
+}
+if(mm.value=="THIRD" && zz.value=="FIRST_SEM" && yy.value=="CSE")
+{
+    window.open("31.html");
+}
+if(mm.value=="THIRD" && zz.value=="SECOND_SEM" && yy.value=="CSE")
+{
+    window.open("32.html");
+}
+if(mm.value=="FOURTH" && zz.value=="FIRST_SEM" && yy.value=="CSE")
+{
+    window.open("41.html");
+}
+if(mm.value=="FOURTH" && zz.value=="SECOND_SEM" && yy.value=="CSE")
+{
+    window.open("42.html");
+}
+if(yy.value=="ECE" ||  yy.value=="EEE")
+{
+    alert("Sorry! The current branch is not available")
+}
+    }
+
+    
+
+
+</script>
+    
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="1st page.html"> <span style="color: orange;">F</span>or <span style="color: orange;">Y</span>ou</a></h1>
+                <ul>
+                    <li><a class="current" href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="coding.html">Coding</a></li>
+                    <li><a href="/loginsystem/signup.php">Placements</a></li>
+               
+               
+                </ul>
+            </div>
+        </nav>
+        
+        
+        
+            <form onsubmit="return hello()">
+                <div id="main-container">
+            <div id="cont1">
+                <div>
+            <h1 style="text-align: center;font-size: 30px; color:orange;padding: 30PX;">SELECT &nbsp;YOUR  &nbsp;YEAR</h1>
+            
+            <div id="m1">
+            <select class="mm" id='mm'>
+                <option>Please Choose</option>
+                <option value="FIRST" >FIRST</option>
+                <option value="SECOND" >SECOND</option>
+                <option value="THIRD">THIRD</option>
+                <option value="FOURTH" >FOURTH</option>
+                
+                </select>
+            </div>
+            </div>
+                <div>
+                    <h1 style="text-align: center;font-size: 30px; color:orange;padding: 30px;margin-top: 10px;">SELECT &nbsp;YOUR  &nbsp;BRANCH</h1>
+                    <div id="m1">
+                    <select  class="mm"id='yy'>
+                        <option>Please Choose</option>
+                        <option value="CSE" >CSE</option>
+                        <option value="ECE" >ECE</option>
+                        <option value="EEE">EEE</option>
+                        
+                        
+                        </select>
+                    </div>
+                    </div>
+                    <div>
+                    <h1 style="text-align: center;font-size: 30px; color:orange;padding: 30px;margin-top: 10px;">CHOOSE &nbsp;YOUR  &nbsp;SEMESTER</h1>
+                    <div id="m1">
+                    <select  class="mm"id='zz'>
+                        <option>Please Choose</option>
+                        <option value="FIRST_SEM" >FIRST_SEM</option>
+                        <option value="SECOND_SEM" >SECOND_SEM</option>
+                    
+                        
+                        
+                        </select>
+                    </div>
+                    </div>
+                   
+            </div>
+            <div class="btn-primary">
+
+                      
+                <input  class="btn" type="submit" value="Submit" >
+            </div>
+            </div>
+                    
+                     
+                     
+                    </form>
+
+        </div>
+        <div id="who">
+            <div class="who-img">
+                <h2 style="color: white ;text-align: center;line-height: 50px;word-spacing: 8px; margin-top: 10PX;">THE PAIN YOU FEEL TODAY<br> WILL BE THE STRENGTH YOU FEEL<br><b><span style="color: orange;"> TOMMOROW</span></b></h2>
+                
+                
+            </div>
+            <div class="who-content">
+                <h2 class="m-heading"><span class="primary">USECASE</span> OF THIS SITE</h3>
+                    
+                    
+                    <div class="list">
+                        <div class="pa">From these you can access your files</div> 
+                        <div class="pa">From these you can attempt mock test</div>  
+                        <div class="pa">From these you can explore new fields</div>
+    
+                    </div>
+            </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prism.css"> 
+    
+  <style>
+      h1{
+          text-align: center;
+      }
+  </style>
+</head>
+<body>
+    
+    
+
+    <h1 style="text-align: center;">Program to print a value using python </h1>
+    <pre>
+        
+        <code class="language-python">
+            #printing a value using python
+            print('Hello World')
+            print("Hello World")
+            print(10)
+            print(20)
+            
+            Output: Hello World
+                    10
+                    20
+        </code>
+        
+    
+    </pre>
+    <h1>Program to Add two Numbers</h1>
+    <pre>
+      
+        <code class="language-python">
+        a=5
+        b=6
+        print(a+b)
+        #Output:11
+
+        #Taking input from user
+        #using input()
+        #To take integer input use int()
+        #num=int(input())--Takes integer input
+        num1=int(input())
+        num2=int(input())
+        result=num1+num2 
+        print(result)
+        #Output will be based as per your input          
+        </code>
+    </pre>
+    <h1>Maximum of two numbers </h1>
+    <pre>
+      <code class="language-python">
+        #using max to get max of numbers
+        a=int(input())
+        b=int(input())
+        print(max(a,b))
+      </code>
+    </pre>
+    <h1>Factorial of a number</h1>
+<pre>
+    <code class="language-python">
+def fact(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+n=int(input('Enter number : '))
+print('Factorial of number is : ',fact(n))
+</code>
+</pre>
+<h1>Program to implement Conditional Statements</h1>
+    <pre>
+      #Using only if
+      <code class="language-python">
+        a=int(input('Enter a number : '))
+        if(a>0):
+            print('Positive Number')
+        if(a<0):
+            print("Negative Number")
+         
+      </code>
+</pre>
+<pre>
+      #using if else
+      <code class="language-python">
+        age=int(input('Enter your age : '))
+        if(age>18):
+            print('You are eligible to vote')
+        else:
+            print('You are not eligible to vote')
+        
+      </code>
+    </pre>
+    <h1>Program to find maximum of three numbers</h1>
+    <pre>
+      <code class="language-python">
+        a=int(input())
+        b=int(input())
+        c=int(input())
+        if(a>b):
+            if(a>c):
+                print(a,"is greater of ",a,b,c)
+            else:
+                print(c,"is greater of ",a,b,c)
+        else:
+            if(b>c):
+                print(b,"is greater of ",a,b,c)
+            else:
+                print(c,"is greater of ",a,b,c)
+        
+      </code>
+    </pre>
+  <h1>Program for if-elif-else ladder</h1>
+    <pre>
+      <code class="language-python">
+a=int(input())
+if(a>0):
+    print(a,'is greater than zero')
+elif(a==0):
+    print(a,'is zero')
+else:
+    print(a,'is less than zero')
+
+      </code>
+    </pre>
+<h1>Program for Using 'For' loop</h1>
+    <pre>
+      <code class="language-python">
+a=int(input('Enter a number : '))
+for i in range(0,a+1):
+    print(i)
+#Output
+Enter a number : 10
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+      </code>
+
+    </pre>
+    <h1>For loop with 'in operator' saperating vowels and consonants in a string</h1>
+    <pre><code class="language-python">
+      a=input('Enter a name ')
+      list=[]
+      list1=[]
+      for i in a:
+          if(i=='a'or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+              list.append(i)
+          else:
+              list1.append(i)
+      print(*list)
+      print(*list1)
+      #Output
+      /*
+      Enter a name Dhoni
+      o i
+      D h n 
+      */
+          
+    </code>
+    
+  </pre>
+  <h1>Using While Loop</h1>
+    <pre><code class="language-python">
+a=10
+i=1
+while(i<=10):
+    print(i)
+    i=i+1
+#Output
+/*
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
+    </code></pre>
+    <h1>Program to check Armstring Number</h1>
+    <pre><code class="language-python">
+# Python program to check if the number is an Armstrong number or not
+
+# take input from the user
+num = int(input("Enter a number: "))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+#Output
+
+#Enter a number: 343
+#343 is not an Armstrong number
+    </code></pre>
+    <h1>Program to Find  Palindrome of a number</h1>
+    <pre>
+    <code class="language-python">
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("The number is a palindrome!")
+else:
+    print("The number isn't a palindrome!")
+
+    </code>
+    </pre>
+<h1>Palindrome of a string</h1> 
+    <pre>
+    <code class="language-python">
+a=input("Enter a string : ")
+if(str(a)==a[::-1]):
+    print("palindrome")
+else:
+    print("not palindrome")
+#Output
+/*
+Enter a string : malayalam
+palindrome
+*/
+
+    </code>
+    </pre>
+    <h1>Program to check Prime Number</h1>
+    <pre>
+    <code class="language-python">
+      n=int(input("enter a number:"))
+      for i in range(2,n):
+          if(n%2==0):
+                  print(n,"is not prime number")
+                  break
+      else:
+          print(n,"is a prime number")    
+      
+    </code>
+    </pre>
+    <h1>Program to find area of a circle</h1>
+    <pre>
+    <code class="language-python">
+      # Python program to find Area of a circle
+
+      def findArea(r):
+        PI = 3.142
+        return PI * (r*r);
+    
+      print("Area is %.6f" % findArea(5));
+    
+      
+    </code>
+    </pre>
+    <h1>Python program to find sum of squares of first n natural numbers</h1>
+    <pre>
+    <code class="language-python">
+N = int(input("Enter value of N: "))
+
+# calculating sum of square 
+sumVal = 0
+for i in range(1, N+1):
+    sumVal += (i*i)
+
+print("Sum of squares = ", sumVal)
+#Output
+/*
+RUN 1:
+Enter value of N: 10
+Sum of squares =  385
+
+RUN 2:
+Enter value of N: 12
+Sum of squares =  650
+*/
+
+
+    </code>
+    </pre>
+    <h1>Python program to find sum of  cubes of first n natural numbers</h1>
+
+    <pre>
+    <code class="language-python">
+# Python program for sum of the 
+# cubes of first N natural numbers
+      
+# Getting input from users
+N = int(input("Enter value of N: "))
+      
+# calculating sum of cube 
+sumVal = 0
+for i in range(1, N+1):
+    sumVal += (i*i*i)
+      
+print("Sum of cubes = ", sumVal)
+#Output
+/*
+RUN 1:
+Enter value of N: 10
+Sum of cubes =  3025
+
+RUN 2:
+Enter value of N: 12
+Sum of cubes =  6084
+*/
+    </code>
+    </pre>
+    <h1>Program to print ascii values of a charecter</h1>
+    <pre>
+    <code class="language-python">
+# Program to find the ASCII value of the given character
+
+c = 'p'
+print("The ASCII value of '" + c + "' is", ord(c))
+#Output
+#The ASCII value of 'p' is 112 
+    </code>
+    </pre>
+    <h1>Program to find sum of array elements</h1>
+    <pre>
+    <code class="language-python">
+#Initialize array     
+arr = [1, 2, 3, 4, 5];     
+sum = 0;    
+     
+#Loop through the array to calculate sum of elements    
+for i in range(0, len(arr)):    
+   sum = sum + arr[i];    
+     
+print("Sum of all the elements of an array: " ,sum);
+#Output
+#Sum of all the elements of an array: 15
+
+
+    </code>
+    </pre>
+    <h1>Program to find maximum of array</h1>
+    <pre>
+    <code class="language-python">
+#program to find maximum of array
+a=[1,2,3,4,5,6]
+print(max(a))
+#Output
+6
+    </code>
+    </pre>
+    <h1>Reverse of a number using python</h1>
+    <pre>
+    <code class="language-python">
+        num = 1234
+        reversed_num = 0
+        
+        while num != 0:
+            digit = num % 10
+            reversed_num = reversed_num * 10 + digit
+            num //= 10
+        
+        print("Reversed Number: " + str(reversed_num))
+        #Output
+        /*
+        1234
+        */   
+    </code>
+    </pre>
+    <h1>Program to add two matrices</h1>
+    <pre>
+    <code class="language-python">
+        # Program to add two matrices using nested loop
+
+        X = [[1,2,3],
+            [4 ,5,6],
+            [7 ,8,9]]
+        
+        Y = [[9,8,7],
+            [6,5,4],
+            [3,2,1]]
+        
+        
+        result = [[0,0,0],
+                [0,0,0],
+                [0,0,0]]
+        
+        # iterate through rows
+        for i in range(len(X)):
+        # iterate through columns
+            for j in range(len(X[0])):
+                result[i][j] = X[i][j] + Y[i][j]
+        
+        for r in result:
+            print(r)
+        
+    </code>
+    </pre>
+    <h1>Program to multiply two matrices</h1>
+    <pre>
+    <code class="language-python">
+        # Program to multiply two matrices using nested loops
+
+        # take a 3x3 matrix
+        A = [[12, 7, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
+        
+        # take a 3x4 matrix
+        B = [[5, 8, 1, 2],
+            [6, 7, 3, 0],
+            [4, 5, 9, 1]]
+            
+        result = [[0, 0, 0, 0],
+                [0, 0, 0, 0],
+                [0, 0, 0, 0]]
+        
+        # iterating by row of A
+        for i in range(len(A)):
+        
+            # iterating by column by B
+            for j in range(len(B[0])):
+        
+                # iterating by rows of B
+                for k in range(len(B)):
+                    result[i][j] += A[i][k] * B[k][j]
+        
+        for r in result:
+              print(r)
+        
+    </code>
+</pre>
+
+    <script src="prism.js">
+
+    </script>
+   
+</body>
+</html>
